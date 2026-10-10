@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quiz Arena</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header class="header">
+      <div class="logo">Q</div>
+
+      <div>
+        <h1>Quiz Arena</h1>
+        <p>Challenge your knowledge</p>
+      </div>
+    </header>
+
+
+    <!-- WELCOME -->
+
+    <section id="welcome" class="card">
+
+      <span class="tag">KNOWLEDGE CHALLENGE</span>
+
+      <h2>Ready to test yourself?</h2>
+
+      <p>Answer 5 questions and discover your score.</p>
+
+      <ul>
+        <li>5 multiple-choice questions</li>
+        <li>15 seconds per question</li>
+        <li>Instant result and answer review</li>
+      </ul>
+
+      <button id="startBtn" class="primary">
+        Start Quiz →
+      </button>
+
+      <p id="error" class="error"></p>
+
+    </section>
+
+
+    <!-- QUIZ -->
+
+    <section id="quiz" class="card hidden">
+
+      <div class="quiz-top">
+        <span id="questionCount">Question 1 of 5</span>
+        <span id="timer">15s</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress" class="progress"></div>
+      </div>
+
+      <h2 id="questionText"></h2>
+
+      <div id="options"></div>
+
+      <div class="quiz-bottom">
+
+        <span id="answeredCount">
+          Choose an answer
+        </span>
+
+        <button id="nextBtn" class="primary" disabled>
+          Next →
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- RESULT -->
+
+    <section id="result" class="card hidden">
+
+      <span class="tag">QUIZ COMPLETED</span>
+
+      <h2>Your Result</h2>
+
+      <div class="score-circle">
+        <span id="score">0/5</span>
+      </div>
+
+      <h3 id="resultMessage"></h3>
+
+      <p id="percentage"></p>
+
+      <h3>Answer Review</h3>
+
+      <div id="review"></div>
+
+      <button id="restartBtn" class="primary">
+        Try Again ↻
+      </button>
+
+    </section>
+
+
+    <footer>
+      Quiz Arena · Learn something new every day
+    </footer>
+
+  </main>
+
+</body>
+</html>
